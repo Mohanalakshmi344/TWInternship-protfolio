@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>protfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="logo.jpg" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"> </i>
+        </nav>
+      </div>
+      <div class="header-text">
+        <h1>Hi,I'm <span>Mohanalakshmi</span></h1>
+        <p>Upcoming Fullstack Developer</p>
+      </div>
+    </div>
+    <!--------------------------------ABOUT------------------------------------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Mohana.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              As a third-year student at Psna College, I am passionate about
+              programming and web development. Eager to explore the intricate
+              world of coding, I am dedicated to honing my skills with the goal
+              of becoming a proficient full-stack developer. With a keen
+              interest in both front-end and back-end technologies, I am driven
+              by the desire to create seamless and innovative web solutions. My
+              academic journey at Psna College is complemented by a hands-on
+              approach to learning, where I actively engage with various
+              programming languages and frameworks. Excited about the endless
+              possibilities of the tech world, I am on a mission to build a
+              solid foundation for a successful career in full-stack
+              development.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active" onclick="opentab('Skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents s" id="Skills">
+              <ul>
+                <li>
+                  <span>Programming languages</span><br />
+                  C,python,java
+                </li>
+                <li><span>Front-end stack</span><br />Html,css,javascript</li>
+                <li>
+                  <span>Web Development</span><br />
+                  Developing webapps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li>
+                  <span>2023 November</span><br />
+                  Web development intern at Arsus Solutions
+                </li>
+                <li>
+                  <span>2023 October</span><br />AWS Master class Student of
+                  PanTech eLearning
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>B.E CSE(2021-2025)</span><br />
+                  PSNA College of engineering and technology
+                </li>
+                <li>
+                  <span>HSC</span><br />St.Joseph's.matric.higher.sec.school
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------PORTFOLIO--------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="worklist">
+          <div class="work">
+            <img src="flight.jpg" />
+            <div class="layer">
+              <h3>Flight ticket booking website</h3>
+              <p>This website enables user to book their flight tickets.</p>
+              <a href="D:\html codes\flight\flight.html"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="hotel.jpg" />
+            <div class="layer">
+              <h3>Hotel rooms booking website</h3>
+              <p>This website enables user to book their rooms in hotel.</p>
+              <a href="D:\html codes\eg.html"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="land.jpg" />
+            <div class="layer">
+              <h3>Landing webage</h3>
+              <p>
+                This website enables user to access different educational
+                courses.
+              </p>
+              <a href="F:\A TW intern\landing page\land.html"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">Explore more</a>
+      </div>
+    </div>
+    <!--------------------------------contact-------------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>abc@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>9876543210</p>
+            <div class="social-icons">
+              <a href="https://facebook.com/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="https://instagram.com/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/mohanalakshmi-s-827165229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="Resume.pdf" download class="btn btn2">Download Resume</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="your name" required />
+              <input
+                type="text"
+                name="email"
+                placeholder="your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------javascript---------------------->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("s");
+        }
+        event.currentTarget.classList.add("active");
+        document.getElementById(tabname).classList.add("s");
+      }
+    </script>
+    <script>
+      var sidemen = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemen.style.right = "0";
+      }
+      function closemenu() {
+        sidemen.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
